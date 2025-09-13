@@ -5,11 +5,10 @@ The **Recipe Page** project. The goal is to build a responsive cooking recipe pa
 ---
 
 ## Demo
+![Screenshot](assets/images/preview.png)
 
-Live demo:  
-[Your live link on GitHub Pages or locally]
+Live demo: [DEMO](https://kamil-engineer.github.io/recipe/)
 
-![Screenshot](images/image-omelette.jpeg)
 
 ---
 
@@ -23,7 +22,6 @@ Live demo:
   - Step-by-step instructions
   - Footer with author info
 - Clean and user-friendly design, following Frontend Mentor Figma
-- Basic interactivity (hover effects, optional light/dark mode)
 
 ---
 
@@ -35,9 +33,8 @@ Live demo:
 ## What i Learned
 
 - Building responsive layouts with Flexbox and Grid
-- Styling sections and elements (headings, lists, buttons)
+- Styling sections and elements (headings, lists)
 - Writing semantic HTML
-- Adding simple interactive effects (hover, buttons, optional light/dark mode)
 - Organizing a project and publishing it on GitHub
 
 ## Author
