@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Omelette Recipe | Recipe</title>
+    <title>Simple Omelette — Quick & Easy Recipe</title>
     <meta
       name="description"
       content="A simple omelette recipe with eggs, cheese, and vegetables."
@@ -40,7 +40,7 @@
       content="https://kamil-engineer.github.io/recipe/assets/images/preview.png"
     />
 
-    <link rel="stylesheet" href="./style/style.css" />
+    <link preload rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <main class="container">
@@ -49,36 +49,155 @@
           <figure class="recipe-figure">
             <img
               src="./assets/images/image-omelette.jpeg"
-              alt="Simple omelette recipe with eggs, cheese, and vegetables."
+              alt="Omelette recipe with eggs, cheese, and vegetables."
               width="560"
               height="256"
               class="recipe-image"
+              fetchpriority="high"
             />
           </figure>
-          <h1 class="recipe-title">Simple Omelette Recipe</h1>
-          <p class="recipe-description">
-            An easy and quick dish, perfect for any meal. This classic omelette
-            combines beaten eggs cooked to perfection, optionally filled with
-            your choice of cheese, vegetables, or meats.
-          </p>
+          <div class="recipe-heading-details">
+            <h1 class="recipe-title">Simple Omelette Recipe</h1>
+            <p class="recipe-description">
+              An easy and quick dish, perfect for any meal. This classic
+              omelette combines beaten eggs cooked to perfection, optionally
+              filled with your choice of cheese, vegetables, or meats.
+            </p>
+          </div>
         </header>
-        <section class="recipe-preparation">
-          <h2 class="recipe-preparation-title">Preparation time</h2>
-          <ul class="recipe-preparation-list">
-            <li>
-              <strong class="recipe-preparation-valuable">Total:</strong>
-              Approximately 10 minutes
-            </li>
-            <li>
-              <strong class="recipe-preparation-valuable">Preparation:</strong>
-              5 minutes
-            </li>
-            <li>
-              <strong class="recipe-preparation-valuable">Cooking:</strong>
-              5 minutes
-            </li>
-          </ul>
-        </section>
+        <div class="recipe-details">
+          <div class="recipe-preparation">
+            <p class="recipe-preparation-title">Preparation time</p>
+            <ul class="recipe-list">
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Total:</strong>
+                  <time datetime="PT10M">Approximately 10 minutes</time>
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Preparation:</strong>
+                  <time datetime="PT5M">5 minutes</time>
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Cooking:</strong>
+                  <time datetime="PT5M">5 minutes</time>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <section class="recipe-subblock">
+            <h2 class="recipe-subtitle">Ingredients</h2>
+            <ul class="recipe-list">
+              <li>
+                <div class="recipe-list-block"><p>2-3 large eggs</p></div>
+              </li>
+              <li>
+                <div class="recipe-list-block"><p>Salt, to taste</p></div>
+              </li>
+              <li>
+                <div class="recipe-list-block"><p>Pepper, to taste</p></div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <p>1 tablespoon of butter or oil</p>
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <p>
+                    Optional fillings: cheese, diced vegetables, cooked meats,
+                    herbs
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <hr class="line" />
+
+          <section class="recipe-subblock">
+            <h2 class="recipe-subtitle">Instructions</h2>
+            <ol class="recipe-list">
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Beat the eggs: </strong>
+                  In a bowl, beat the eggs with a pinch of salt and pepper until
+                  they are well mixed. You can add a tablespoon of water or milk
+                  for a fluffier texture.
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Heat the pan: </strong>
+                  Place a non-stick frying pan over medium heat and add butter
+                  or oil.
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Cook the omelette: </strong>
+                  Once the butter is melted and bubbling, pour in the eggs. Tilt
+                  the pan to ensure the eggs evenly coat the surface.
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Add fillings (optional): </strong>
+                  When the eggs begin to set at the edges but are still slightly
+                  runny in the middle, sprinkle your chosen fillings over one
+                  half of the omelette.
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Fold and serve: </strong>
+                  As the omelette continues to cook, carefully lift one edge and
+                  fold it over the fillings. Let it cook for another minute,
+                  then slide it onto a plate.
+                </div>
+              </li>
+              <li>
+                <div class="recipe-list-block">
+                  <strong>Enjoy: </strong>
+                  Serve hot, with additional salt and pepper if needed.
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <hr class="line" />
+
+          <section class="recipe-subblock">
+            <h2 class="recipe-subtitle">Nutrition</h2>
+            <p class="recipe-description">
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <table class="recipe-table">
+              <tr>
+                <td class="recipe-label">Calories</td>
+                <td class="recipe-value">277kcal</td>
+              </tr>
+              <tr>
+                <td class="recipe-label">Carbs</td>
+                <td class="recipe-value">0 g</td>
+              </tr>
+              <tr>
+                <td class="recipe-label">Protein</td>
+                <td class="recipe-value">20 g</td>
+              </tr>
+              <tr>
+                <td class="recipe-label">Fat</td>
+                <td class="recipe-value">22 g</td>
+              </tr>
+            </table>
+          </section>
+        </div>
       </article>
     </main>
   </body>
